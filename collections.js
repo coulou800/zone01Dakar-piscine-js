@@ -41,3 +41,33 @@ const arrToObj = (arr) => {
 const strToObj = (str) => {
     return arrToObj(strToArr(str))
 }
+
+const superTypeOf = (v) => {
+    if (v instanceof Map) {
+        return 'Map'
+    }
+    if (v instanceof Set) {
+        return 'Set'
+    }
+    if (typeof v == "number") {
+        return 'Number'
+    }
+    if (typeof v == "string") {
+        return 'String'
+    }
+    if (v instanceof Array) {
+        return 'Array'
+    }
+    if (typeof v == "function") {
+        return 'Function'
+    }
+    if (typeof v === undefined) {
+        return 'undefined'
+    }
+    if (typeof v === null) {
+        return 'null'
+    }
+    if (v instanceof Object) {
+        return 'Object'
+    }
+}
