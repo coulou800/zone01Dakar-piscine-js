@@ -1,4 +1,4 @@
-function dogYears(planet,age) {
+function dogYears(planet, age) {
     let earthSec = 31557600
     let map = {
         earth: 1.0,
@@ -10,9 +10,8 @@ function dogYears(planet,age) {
         uranus: 84.016846,
         neptune: 164.79132
     }
-    let dogYearEarth = (age/earthSec)*7
-    let dogYeaPlanet = map[planet]*dogYearEarth
-
-    return dogYeaPlanet.toFixed(2)
+    let dogYearEarth = (age / earthSec) * 7
+    let dogYeaPlanet = map[planet] * dogYearEarth
+    return parseFloat(dogYeaPlanet.toFixed(2))
 
 }
