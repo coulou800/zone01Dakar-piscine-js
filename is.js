@@ -1,6 +1,6 @@
 const is = {}
 
-is.num = (n)=> {
+is.num = (n) => {
     return typeof n == "number"
 }
 
@@ -8,37 +8,38 @@ is.nan = (n) => {
     return Number.isNaN(n)
 }
 
-is.str = (n)=>{
+is.str = (n) => {
     return typeof n == "string"
 }
 
-is.bool = (n)=>{
+is.bool = (n) => {
     return typeof n == "boolean"
 }
 
-is.undef = (n)=>{
+is.undef = (n) => {
     return typeof n == "undefined"
 }
 
-is.def = (n)=>{
+is.def = (n) => {
     return typeof n != "undefined"
 }
-is.arr = (n)=>{
+is.arr = (n) => {
     return Array.isArray(n)
 }
 
-is.obj = (n)=>{
-    return typeof n == "Object"
+is.obj = (n) => {
+    return typeof n == "object"
 }
 
-is.fun = (n)=>{
+is.fun = (n) => {
     return typeof n == "function"
 }
 
-is.truthy = (n)=>{
+is.truthy = (n) => {
     return n && "dog" == "dog" ? true : false
 }
 
-is.falsy = (n)=> {
+is.falsy = (n) => {
     return !is.truthy(n)
 }
+console.log(is.obj(is));
