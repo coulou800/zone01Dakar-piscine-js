@@ -1,8 +1,3 @@
-const person = {
-    name: 'Rick',
-    age: 77,
-    country: 'US',
-}
 let clone1 = new Object()
 let clone2 = new Object()
 clone1 = Object.assign(clone1, person)
