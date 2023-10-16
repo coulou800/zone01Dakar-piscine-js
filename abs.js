@@ -1,5 +1,5 @@
 function isPositive(params) {
-    return params >= 0
+    return params > 0
 }
 
 function abs(params) {
