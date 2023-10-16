@@ -6,3 +6,7 @@ function sign(params) {
     }
     return 0
 }
+
+function sameSign(params,params1) {
+    return (params >0 && params1 >0) || (params<0&&params1<0)
+}
