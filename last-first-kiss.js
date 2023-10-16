@@ -5,6 +5,6 @@ function last(params) {
     return params[params.length-1]
 }
 
-function last(params) {
+function kiss(params) {
     return [last(params),first(params)]
 }
