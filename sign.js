@@ -8,5 +8,5 @@ function sign(params) {
 }
 
 function sameSign(params,params1) {
-    return (params >0 && params1 >0) || (params<0&&params1<0)
+    return sign(params) == sign(params1)
 }
