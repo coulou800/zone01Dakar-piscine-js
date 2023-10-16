@@ -1,3 +1,2 @@
-let circular = {
-    circular: this
-}
+let circular = new Object()
+circular.circular = circular
