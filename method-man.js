@@ -15,7 +15,7 @@ function whisper(params) {
 }
 
 function capitalize(params) {
-    return (params[0].toUpperCase() + params.substring(1, params.length)).toLowerCase()
+    return params[0].toUpperCase() + params.substring(1, params.length).toLowerCase()
 }
 
-console.log( 'STR'.substring(1, 'STR'.length));
+console.log(capitalize('STR'));
