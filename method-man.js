@@ -7,7 +7,7 @@ function sentence(params) {
 }
 
 function yell(params) {
-    return params.toUppercase()
+    return params.toUpperCase()
 }
 
 function whisper(params) {
