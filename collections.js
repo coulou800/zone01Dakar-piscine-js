@@ -1,43 +1,43 @@
-arrToSet = (arr) => {
+const arrToSet = (arr) => {
     return new Set(arr)
 }
 
-arrToStr = (arr) => {
+const arrToStr = (arr) => {
     return arr.join("")
 }
 
-setToArr = (set) => {
+const setToArr = (set) => {
     return Array.from(set)
 }
 
-setToStr = (set) => {
+const setToStr = (set) => {
     return arrToStr(setToArr(set))
 }
 
-strToArr = (str) => {
+const strToArr = (str) => {
     return Array.from(str)
 }
 
-strToSet = (str) => {
+const strToSet = (str) => {
     return arrToSet(strToArr(str))
 }
 
-mapToObj = (map) => {
+const mapToObj = (map) => {
     return Object.fromEntries(map.entries())
 }
 
-objToArr = (obj) => {
+const objToArr = (obj) => {
     return Object.values(obj)
 }
 
-objToMap = (obj) => {
+const objToMap = (obj) => {
     return new Map(Object.entries(obj))
 }
 
-arrToObj = (arr) => {
+const arrToObj = (arr) => {
     return Object.fromEntries(arr.entries())
 }
 
-strToObj = (str) => {
+const strToObj = (str) => {
     return arrToObj(strToArr(str))
 }
