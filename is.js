@@ -28,7 +28,7 @@ is.arr = (n) => {
 }
 
 is.obj = (n) => {
-    return typeof n == "object"
+    return typeof n == "object" && !is.arr(n) && n !== null
 }
 
 is.fun = (n) => {
