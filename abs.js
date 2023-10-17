@@ -7,4 +7,5 @@ function abs(params) {
         return params * -1
     }
     return params
+
 }
